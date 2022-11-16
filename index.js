@@ -1,4 +1,6 @@
-process.on("uncaughtException", Function());
+process.on("uncaughtException", err => {
+  console.log("caught " + err); 
+});
 process.env.PORT = 25565;
 
 const { createServer } = require("net");
