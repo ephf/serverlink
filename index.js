@@ -1,4 +1,5 @@
 process.on("uncaughtException", Function());
+process.env.PORT = 25565;
 
 const { createServer } = require("net");
 
